@@ -1,0 +1,3 @@
+Hello
+    This is  chennai PROGRAMMER  and working  file contain text to pratice  file handling
+ in python
