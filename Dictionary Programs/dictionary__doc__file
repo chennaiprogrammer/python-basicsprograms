@@ -1,0 +1,267 @@
+A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.
+How To Create Dictionary:
+Dict =  {}
+
+dict={1:'a',2:'b',3:'c'}
+
+
+How To access elements from a dictionary:
+
+While indexing is used with other container types to access values, dictionary uses keys. Key can be used either inside square brackets or with the get() method.
+Dict  = {1:’a’,2:’b’,3:’c’}
+Dict[1]
+Dict[2]
+
+Dict  = {1:’a’,2:’b’,3:’c’}
+Dict[1]
+Dict[2]
+
+How to change or add elements in a dictionary:
+Dictionary are mutable. We can add new items or change the value of existing items using assignment operator.
+If the key is already present, value gets updated, else a new key: value pair is added to the dictionary.
+Dict = {1:’a’,2:’b’,3:’c’}
+Dict[1] = ‘k’   #change value
+
+Dict[4] = ‘d’   #add new key and value
+
+
+
+How to delete element from a dictionary:
+del keyword to remove individual items or the entire dictionary itself.
+Dict = {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
+del dict[1]
+
+Python Dictionary Methods:
+Method	Description
+clear()
+Remove all items form the dictionary.
+copy()
+Return a shallow copy of the dictionary.
+fromkeys(seq[, v])
+Return a new dictionary with keys from seq and value equal to v (defaults to None).
+get(key[,d])
+Return the value of key. If key doesnot exit, return d (defaults to None).
+items()
+Return a new view of the dictionary's items (key, value).
+keys()
+Return a new view of the dictionary's keys.
+pop(key[,d])
+Remove the item with key and return its value or d if key is not found. If d is not provided and key is not found, raises KeyError.
+popitem()
+Remove and return an arbitary item (key, value). Raises KeyError if the dictionary is empty.
+setdefault(key[,d])
+If key is in the dictionary, return its value. If not, insert key with a value of d and return d (defaults to None).
+update([other])
+Update the dictionary with the key/value pairs from other, overwriting existing keys.
+values()
+Return a new view of the dictionary's values
+
+Get():
+key - key to be searched in the dictionary.
+value (optional) - Value to be returned if the key is not found. The default value is None.
+
+Syntax:
+dict.get(key[, value])
+
+Examples:
+
+Dict = {1:’a’,2:’b’,3:’c’,4:’d’}
+
+Dict.get(1)
+
+Dict.get(5)
+
+Dict.get(5,0)
+
+
+
+
+Keys():
+The keys() returns a view object that displays a list of all the keys.
+
+Syntax:
+
+dict.keys()
+
+Example:
+
+Dict = {1:’a’,2:’b’,3:’c’,4:’d’}
+
+Dict.keys()
+
+
+
+
+Values()
+
+The values() method returns a view object that displays a list of all values in a given dictionary.
+
+
+Syntax:
+
+Dict.values()
+
+Example:
+
+Dict = {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
+
+Dict.values()
+
+
+
+Items()
+
+The items() method returns a view object that displays a list of a given dictionary's (key, value) tuple pair.
+The items() method doesn't take any parameters.
+
+Syntax:
+
+Dict.items()
+
+Example:
+
+Dict.items()
+
+
+
+Pop()
+
+The pop() method removes and returns an element from a dictionary having the given key.
+
+Syntax:
+dictionary.pop(key[, default])
+
+key - key which is to be searched for removal.
+
+default - value which is to be returned when the key is not in the dictionary.
+
+Example:
+
+Dict = {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
+
+Dict.pop(1,’a’)
+
+Dict.pop(2)
+
+
+
+Popitem()
+
+The popitem() returns and removes an arbitrary element (key, value) pair from the dictionary.
+
+Syntax:
+
+Dict.popitem()
+Example:
+
+
+Fromkeys()
+The fromkeys() method returns a new dictionary with the given sequence of elements as the keys of the dictionary.
+Syntax:
+dictionary.fromkeys(sequence[, value])
+
+sequence - sequence of elements which is to be used as keys for the new dictionary.
+value (Optional) - value which is set to each each element of the dictionary.
+Example:
+dict ={1: 'a', 2: 'b', 3: 'c', 4: 'd'}
+a = dict.fromkeys(dict)
+a = dict.fromkeys(dict,’anyvalues’)
+
+
+Setdefault()
+The setdefault() method returns the value of a key (if the key is in dictionary). If not, it inserts key with a value to the dictionary.
+Syntax:
+dict.setdefault(key[, default_value])
+
+key - key to be searched in the dictionary.
+
+default_value (optional) - key with a value default_value is inserted to the dictionary if key is not in the dictionary.
+
+
+
+Example:
+
+d = {1:'a',2:'b'}
+
+d1 = d.setdefault(2,'k')
+
+
+d = {1:'a',2:'b'}
+
+d1 = d.setdefault(3)
+
+
+d = {1: 'a', 2: 'b'}
+
+d1 = d.setdefault(3,'anyvalue')
+
+
+
+
+Update()
+The update() method updates the dictionary with the elements from the another dictionary object or from an iterable of key/value pairs.
+
+Syntax:
+
+dict.update([other])
+
+Example:
+
+D = {1: 'a', 2: 'b'}
+
+D1 = {3:’c’}
+
+
+
+
+
+d.update(d1)
+
+
+
+D = {1: 'a', 2: 'b',3: ’c’}
+D1 = {3: ‘k’}
+
+d.update(d1)
+
+
+
+
+
+Clear()
+
+The clear() method removes all items from the dictionary. The clear() method doesn't take any parameters.
+
+Syntax:
+
+Dict.clear()
+
+Example:
+
+D = {1: 'a', 2: 'b',3: ’c’}
+
+d.clear()
+
+
+
+
+
+
+
+
+
+Copy()
+
+They copy() method returns a shallow copy of the dictionary.
+
+Syntax:
+
+Dict.copy()
+
+Example:
+
+D = {1: 'a', 2: 'b'}
+
+D1 = d.copy()
+
+
