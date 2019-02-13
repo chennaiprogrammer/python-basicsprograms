@@ -1,0 +1,12 @@
+
+
+
+
+Aim
+   web-scraping with python beautifulsoup
+
+steps
+    step1:CMD in windows or in linux use sudo before
+        pip install beautifulsoup4
+        pip install requests
+    step2
